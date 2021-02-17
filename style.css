@@ -1,15 +1,10 @@
-/*General*/
+/* General */
 
 figcaption {
   width: 715px;
 }
 
-.font {
-    font-family: nyt-cheltenham,georgia,'times new roman',times,serif;
-}
-
-
-/*Navbar*/
+/* Navbar */
 
 #navbar {
   display: flex;
@@ -62,7 +57,7 @@ figcaption {
   font-weight: 200;
 }
 
-/*Header*/
+/* Header */
 
 #page-header {
   display: flex;
@@ -73,7 +68,7 @@ figcaption {
 }
 
 #article-header {
-    width: 600px;
+  width: 600px;
 }
 
 #main-title {
@@ -82,7 +77,7 @@ figcaption {
   font-style: oblique;
   line-height: 43px;
   color: #121212;
-  font-family: nyt-cheltenham,georgia,'times new roman',times,serif;
+  font-family: nyt-cheltenham, georgia, 'times new roman', times,serif;
   margin-bottom: 20px;
 }
 
@@ -104,7 +99,7 @@ figcaption {
 
 .image-caption {
   color: #666;
-  font-family: nyt-imperial,georgia,'times new roman',times,serif;
+  font-family: nyt-imperial, georgia, 'times new roman', times, serif;
   font-size: 15px;
   line-height: 1.25rem;
 }
@@ -120,7 +115,7 @@ figcaption {
 }
 
 #author-caption {
-  font-family: nyt-cheltenham,georgia,'times new roman',times,serif;
+  font-family: nyt-cheltenham, georgia, 'times new roman', times, serif;
   color: #333;
   font-weight: 600;
   margin-bottom: 25px;
@@ -135,7 +130,7 @@ figcaption {
   font-weight: lighter;
 }
 
-/*Article*/
+/* Article */
 
 .article-text-section {
   display: flex;
@@ -145,20 +140,26 @@ figcaption {
 }
 
 .content-paragraph {
-  font-family: nyt-imperial,georgia,'times new roman',times,serif;
+  color: #333;
+  font-family: nyt-imperial, georgia,'times new roman',times,serif;
   font-size: 1.25rem;
   line-height: 1.875rem;
-  color: #333;
+  margin: 10px 0;
   width: 600px;
 }
 
 .wide-ad {
-    height: 305px;
-    width: 100%;
-    padding: 15px 0;
-    border-top: 1px solid rgb(243, 243, 243);
-    border-bottom: 1px solid rgb(243, 243, 243);
-    background-color: rgb(247, 247, 247);
+  height: 250px;
+  width: 100%;
+  padding: 15px 0;
+  margin: 30x 0;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  font-size: 10px;
+  border-top: 1px solid rgb(243, 243, 243);
+  border-bottom: 1px solid rgb(243, 243, 243);
+  background-color: rgb(247, 247, 247);
+  color: #ccc;
+  text-align: center;
 }
 
 #inflation-theory {
@@ -172,4 +173,12 @@ figcaption {
 #bicep2-image {
   width: 600px;
   height: 400px;
+}
+
+.subtitle {
+  font-family: nyt-imperial, georgia,'times new roman',times,serif;
+  font-weight: 600;
+  font-size: 20px;
+  width: 600px;
+  margin: 15px 0;
 }
