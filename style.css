@@ -1,6 +1,19 @@
+/*General*/
+
+figcaption {
+  width: 715px;
+}
+
+.font {
+    font-family: nyt-cheltenham,georgia,'times new roman',times,serif;
+}
+
+
+/*Navbar*/
+
 #navbar {
   display: flex;
-  height: 41px; 
+  height: 41px;
   padding: 3px 15px;
   margin: 0;
   justify-content: space-between;
@@ -47,4 +60,116 @@
 .nav-icons {
   padding-top: 5px;
   font-weight: 200;
+}
+
+/*Header*/
+
+#page-header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-top: 60px;
+}
+
+#article-header {
+    width: 600px;
+}
+
+#main-title {
+  font-size: 40px;
+  font-weight: 700;
+  font-style: oblique;
+  line-height: 43px;
+  color: #121212;
+  font-family: nyt-cheltenham,georgia,'times new roman',times,serif;
+  margin-bottom: 20px;
+}
+
+#social-media-header {
+  border-top: 1px solid #ebebeb;
+  padding-top: 20px;
+  height: 32px;
+}
+
+#header-image-container {
+  width: 945px;
+  margin-bottom: 15px;
+}
+
+#header-image {
+  width: 100%;
+  height: 531.5px;
+}
+
+.image-caption {
+  color: #666;
+  font-family: nyt-imperial,georgia,'times new roman',times,serif;
+  font-size: 15px;
+  line-height: 1.25rem;
+}
+
+.credit {
+  color: #888;
+  font-size: 12px;
+}
+
+#article-author-date {
+  width: 600px;
+  margin-bottom: 25px;
+}
+
+#author-caption {
+  font-family: nyt-cheltenham,georgia,'times new roman',times,serif;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+#link-author {
+  color: inherit;
+}
+
+#article-date {
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+/*Article*/
+
+.article-text-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.content-paragraph {
+  font-family: nyt-imperial,georgia,'times new roman',times,serif;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  color: #333;
+  width: 600px;
+}
+
+.wide-ad {
+    height: 305px;
+    width: 100%;
+    padding: 15px 0;
+    border-top: 1px solid rgb(243, 243, 243);
+    border-bottom: 1px solid rgb(243, 243, 243);
+    background-color: rgb(247, 247, 247);
+}
+
+#inflation-theory {
+  width: 945px
+}
+
+#inflation-image {
+  height: 576px;
+}
+
+#bicep2-image {
+  width: 600px;
+  height: 400px;
 }
