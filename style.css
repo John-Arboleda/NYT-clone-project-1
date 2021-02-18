@@ -170,6 +170,7 @@
 
 #inflation-content {
   position: relative;
+  margin-top: 10px;
 }
 
 #inflation-image {
@@ -188,6 +189,7 @@
   font-family: nyt-franklin, arial, helvetica, sans-serif;
   text-align: left;
   color: #333;
+  margin: 10px 0;
 }
 
 #inflation-text {
@@ -196,7 +198,27 @@
   bottom: 0;
   width: 945px;
   height: 576px;
-  background-color: rgba(126, 252, 0, 0.404);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "infl-11 infl-12 infl-13 infl-14"
+    "infl-21 infl-22 infl-23 infl-24";
+}
+
+#inflation-text div {
+  padding-top: 65%;
+  margin: 2px;
+}
+
+#inflation-text p {
+  font-family: nyt-franklin, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 17px;
+  font-weight: 300;
+}
+
+#inflation-text span {
+  font-weight: 700;
 }
 
 /* Video */
