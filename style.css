@@ -164,15 +164,21 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 945px;
+  margin: 0 auto;
+}
+
+#inflation-content {
+  position: relative;
 }
 
 #inflation-image {
   height: 576px;
-  width: 945px;
+  width: 100%;
 }
 
 #inflation-credit {
-  width: 945px;
+  width: 100%;
 }
 
 #inflation-credit > p {
@@ -184,20 +190,29 @@
   color: #333;
 }
 
+#inflation-text {
+  display: grid;
+  position: absolute;
+  bottom: 0;
+  width: 945px;
+  height: 576px;
+  background-color: rgba(126, 252, 0, 0.404);
+}
+
 /* Video */
 
 .media-container {
   margin: auto;
-  width: fit-content;
+  width: 600px;
 }
 
 .media-container > iframe {
-  width: 600px;
+  width: 100%;
   height: 338px;
 }
 
 .media-container > figcaption {
-  width: 600px;
+  width: 100%;
 }
 
 /* Bicep2 Image */
@@ -217,4 +232,82 @@
 
 .summary-text {
   width: 945px;
+}
+
+/* Aside Editor's Choice */
+
+.ed-tit {
+  grid-area: ed-header;
+  font-family: nyt-franklin, arial, helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+.ed-img1 {
+  grid-area: ed-11;
+}
+
+.ed-link1 {
+  grid-area: ed-12;
+}
+
+.ed-img2 {
+  grid-area: ed-21;
+}
+
+.ed-link2 {
+  grid-area: ed-22;
+}
+
+.ed-img3 {
+  grid-area: ed-31;
+}
+
+.ed-link3 {
+  grid-area: ed-32;
+}
+
+#editors-choice {
+  height: 321px;
+  width: 210px;
+  position: absolute;
+  right: 40px;
+  display: grid;
+  grid-template-columns: 75px auto;
+  grid-template-rows: 29px 1fr 1fr 1fr;
+  grid-template-areas:
+    "ed-header ed-header"
+    "ed-11 ed-12"
+    "ed-21 ed-22"
+    "ed-31 ed-32";
+}
+
+#editors-choice img {
+  height: 75px;
+  width: 75px;
+}
+
+#editors-choice a {
+  font-family: nyt-franklin, arial, helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+}
+
+.ed-link1,
+.ed-link2,
+.ed-link3 {
+  padding-left: 8px;
+}
+
+.ed-img1,
+.ed-img2,
+.ed-img3,
+.ed-link1,
+.ed-link2,
+.ed-link3 {
+  align-self: center;
 }
