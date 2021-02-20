@@ -7,7 +7,8 @@
 <link rel="stylesheet" href="reset.css"/>
 <link rel="stylesheet" href="style.css"/>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 </head>
 
 <body>
@@ -31,8 +32,14 @@
 <header id="page-header">
     <div id="article-header">
         <h1 id="main-title">Space Ripples Reveal Big Bang’s Smoking Gun</h1>
-        <div id="social-media-header">
-    </div>
+        <div class="social-media-bar">
+            <i class="icon-facebook social-icons"></i>
+            <i class="icon-twitter social-icons"></i>
+            <i class="icon-mail-forward social-icons"></i>
+            <i class="icon-envelope social-icons"></i>
+            <i class="icon-bookmark-empty user-icons"></i>
+            <i class="icon-comment-alt user-icons"></i>
+        </div>
     </div>
     <figure id="header-image-container">
         <img id="header-image" src="items/18cosmos-articleLarge.jpg" alt="Alan Guth Photo"/>
@@ -239,23 +246,241 @@
     </section>
 
     <div id="bottom-of-article">
-        <div id="version-of-article">
-
-        </div>
-        <div>
-            <button></button>
+        <p class="version-of-article">A version of this article appears in print on March 18, 2014, Section A, Page 1 of the New York edition with the headline: Space Ripples Reveal Big Bang’s Smoking Gun. <a href="#">Order Reprints</a> | <a href="#">Today’s Paper</a> | <a href="#">Subscribe</a></p>
+        <div class="comment-section">
+            <input class= "nav-buttons" id="comment" value="READ 615 COMMENTS" type="submit"/>
+            <div>
+                <i class="icon-facebook social-icons"></i>
+                <i class="icon-twitter social-icons"></i>
+                <i class="icon-mail-forward social-icons"></i>
+                <i class="icon-envelope social-icons"></i>
+            </div>
         </div>
     </div>
 </article>
-
 </main>
-<nav id="bottom-nav">
 
+<!-- Suggested Newsletter for you -->
 
+<div class="grid-suggested-content">
+    <div class="suggestions-title t1">Suggested newsletters for you </div>
+    <div class="suggested-newsletters stile">    
+        <div class="suggested-tile">
+            <img src="items/newsletter-breaking-news.png" alt="breaking news">
+            <div class="plus">
+                <div></div>	
+            </div>
+            <div class="suggested-tile-title">AS NEEDED</div>
+            <div class="suggested-tile-sub">Breaking News</div>
+            <p class="suggested-tile-content">Alerts when important news breaks around the world.</p>
+            <div class="see-the-latest">See the latest</div>
+        </div>
+        <div class="suggested-tile">
+            <img src="items/newsletter-at-home.png" alt="weekly">
+            <div class="plus"><div></div></div>
+            <div class="suggested-tile-title">WEEKLY</div>
+            <div class="suggested-tile-sub">At Home</div>
+            <p class="suggested-tile-content">Our best suggestions for how to live a full and cultured life during the pandemic, at home.</p>
+            <div class="see-the-latest">See the latest</div>
+        </div>
+        <div class="suggested-tile">
+            <img src="items/newsletter-the-morning.png" alt="the morning">
+            <div class="plus"><div></div></div>
+            <div class="suggested-tile-title">DAILY</div>
+            <div class="suggested-tile-sub">The Morning</div>
+            <p class="suggested-tile-content">Make sense of the day's news and ideas. David Leonhardt and Times journalists guide you through what's happening - and why it matters.</p>
+            <div class="see-the-latest">See the latest</div>
+        </div>
+    </div>
+
+    <!-- sidebar of popular links -->
+    
+    <div class="suggestions-title t2">Most Popular</div>
+    <div class="most-popular popular">
+        <div class="popular-link">Gwyneth Paltrow Is Selling Vibrators</div>
+        <div class="popular-link">5 Reader Comments Just Cost a News Website $124,000</div>
+        <div class="popular-link">Ted Cruz’s Cancún Trip: Family Texts Detail His Political Blunder</div>
+        <div class="popular-link">Harry and Meghan to Give Up Official Royal Family Duties</div>
+        <div class="popular-link">‘I Am Worth It’: Why Thousands of Doctors in America Can’t Get a Job</div>
+        <div class="popular-link">90,000 Packages Are Stolen in N.Y.C. Every Day. How One Building Fought Back.</div>
+        <div class="popular-link">The Virginia G.O.P. Voted on Its Future. The Losers Reject the Results.</div>
+        <div class="popular-link">How a Former News Anchor and Current Painter Spends His Sundays</div>
+        <div class="popular-link">The People Who Got Puppies Were in Over Their Heads</div>
+        <div class="popular-link">Opinion: Ted Cruz’s Excellent Adventure</div>
+    </div>
+
+    <!-- Lower grid of related content links -->
+
+    <div class="suggestions-title t3">More in Space and Astronomy</div>
+    <div class="space-and-astronomy spce">
+        <div class="tile">
+            <img src="items/Nasa-Mars.jpg" alt="NASA-mars">
+            <figcaption class="tile-caption">Bill Ingralls/NASA, Via Agence France-Presse</figcaption>
+            <div class="tile-link">NASA's Perseverance Rover Lands on Mars to Renew Search for Extinct Life</div>
+            <time class="tile-time">Feb. 18</time>
+        </div>
+        <div class="tile">
+            <img src="items/Black-Hole.jpg" alt="Black Hole">
+            <figcaption class="tile-caption">International Centre for Radio Astronomy Reserach</figcaption>
+            <div class="tile-link">A Famous Black Hole Gets a Massive Udapte</div>
+            <time class="tile-time">Feb. 18</time>
+        </div>
+        <div class="tile">
+            <img src="items/Suggested-Ad.png" alt="Alaïa's ad">
+            <figcaption class="tile-caption">PAID POST: Alaïa</figcaption>
+            <div class="tile-link">For Spring '21, a Fresh Take on Alaïa's singular Vision</div>
+            <time class="tile-time">ALAÏA</time>
+        </div>
+        <div class="tile">
+            <img src="items/Voyager.jpg" alt="Earth-Voyager">
+            <figcaption class="tile-caption">NASA</figcaption>
+            <div class="tile-link">Earth to Voyager 2: After a Year in Darkness, We Can Talk to You Again</div>
+            <time class="tile-time">Feb. 17</time>
+        </div>
+        <div class="tile">
+            <img src="items/China-Mars.jpg" alt="China-mars">
+            <figcaption class="tile-caption">Nick Cote for The New York Times</figcaption>
+            <div class="tile-link">China's Mars Mission Begins Orbit of the Red Planet</div>
+            <time class="tile-time">Feb. 10</time>
+        </div>
+        <div class="tile">
+            <img src="items/Mars-UAE.jpg" alt="Mars-UAE">
+            <figcaption class="tile-caption">Christopher Pike/Reuters</figcaption>
+            <div class="tile-link">Mars Mission From the U.A.E Begins Orbit of Red Planet</div>
+            <time class="tile-time">Feb. 18</time>
+        </div>
+    </div>
+
+    <!-- Lower grid of related content links -->
+
+    <div class="suggestions-title t4">Editors' Picks</div>
+    <div class="space-and-astronomy edpck">
+        <div class="tile">
+            <img src="items/russian-salad.jpg" alt="Russian-Salad">
+            <figcaption class="tile-caption">Heami Lee for The New York Times. Food stylist: Maggie Ruggiero. Prop stylist: Sophia Pappas.</figcaption>
+            <div class="tile-link">Rediscovering Russian Salad</div>
+            <time class="tile-time">Feb. 10</time>
+        </div>
+        <div class="tile">
+            <img src="items/house-soviets.jpg" alt="House-Soviets">
+            <figcaption class="tile-caption"></figcaption>
+            <div class="tile-link">The Haunted House of Soviets Gets a New Life</div>
+            <time class="tile-time">Feb. 16</time>
+        </div>
+        <div class="tile">
+            <img src="items/hermione-lee.jpg" alt="Hermione-Lee">
+            <figcaption class="tile-caption">Jamie Muir</figcaption>
+            <div class="tile-link">In 'Tom Stoppard,' Hermione Lee Takes On a New Challenge: a Living Subject</div>
+            <time class="tile-time">Feb. 16</time>
+        </div>
+    </div>
+</div>
+
+<!-- Nav table below all content -->
+
+<nav class="bottom-nav">
+    <div class="nytimes title"><img src="images/title.png"></div>
+    <div class="home-page-link">Go to Home Page »</div>
+    <ul class="footer-list"><em>NEWS</em>
+        <li class="foot-element">Home Page</li>
+        <li class="foot-element">World</li>
+        <li class="foot-element">Coronavirus</li>
+        <li class="foot-element">U.S.</li>
+        <li class="foot-element">Politics</li>
+        <li class="foot-element">Election Results</li>
+        <li class="foot-element">New York</li>
+        <li class="foot-element">Business</li>
+        <li class="foot-element">Tech</li>
+        <li class="foot-element">Science</li>
+        <li class="foot-element">Sports</li>
+        <li class="foot-element">Obituaries</li>
+        <li class="foot-element">Today's Paper</li>
+        <li class="foot-element">Corrections</li>
+    </ul>
+    <ul class="footer-list"><em>OPINION</em>
+        <li class="foot-element">Today's Opinion</li>
+        <li class="foot-element">Op-Ed Columnists</li>
+        <li class="foot-element">Editorials</li>
+        <li class="foot-element">Op-Ed Contributors</li>
+        <li class="foot-element">Letters</li>
+        <li class="foot-element">Sunday Review</li>
+        <li class="foot-element">Video: Opinion</li>
+    </ul>
+    <ul class="footer-list"><em>ARTS</em>
+        <li class="foot-element">Today's Arts</li>
+        <li class="foot-element">Art & Design</li>
+        <li class="foot-element">Books</li>
+        <li class="foot-element">Dance</li>
+        <li class="foot-element">Movies</li>
+        <li class="foot-element">Pop Culture</li>
+        <li class="foot-element">Television</li>
+        <li class="foot-element">Theatre</li>
+        <li class="foot-element">Video: Arts</li>
+    </ul>
+    <ul class="footer-list"><em>LIVING</em>
+        <li class="foot-element">At Home</li>
+        <li class="foot-element">Automobiles</li>
+        <li class="foot-element">Games</li>
+        <li class="foot-element">Education</li>
+        <li class="foot-element">Food</li>
+        <li class="foot-element">Health</li>
+        <li class="foot-element">Jobs</li>
+
+        <li class="foot-element">Love</li>
+        <li class="foot-element">Magazine</li>
+        <li class="foot-element">Parenting</li>
+        <li class="foot-element">Real Estate</li>
+        <li class="foot-element">Recipes</li>
+        <li class="foot-element">Style</li>
+        <li class="foot-element">T Magazine</li>
+        <li class="foot-element">Travel</li>
+    </ul>
+    <ul class="footer-list"><em>MORE</em>
+        <li class="foot-element">Reader Center</li>
+        <li class="foot-element">Wirecutter</li>
+        <li class="foot-element">Live Events</li>
+        <li class="foot-element">The Learning Network</li>
+        <li class="foot-element">Tools & Services</li>
+        <li class="foot-element">Multimedia</li>
+        <li class="foot-element">Photography</li>
+        <li class="foot-element">Video</li>
+        <li class="foot-element">Newsletters</li>
+        <li class="foot-element">TimesMachine</li>
+        <li class="foot-element">NYT Store</li>
+        <li class="foot-element">Times Journeys</li>
+        <li class="foot-element">Manage My Account</li>
+    </ul>
+    <ul id="sub" class="footer-list sub"><em>SUBSCRIBE</em>
+        <li class="foot-element subelement "><img src="images/home.png">Home Delivery</li>
+        <li class="foot-element subelement"><img src="images/digital.png">Digital Subscriptions</li>
+        <li class="foot-element subelement"><img src="images/games.png">Games</li>
+        <li class="foot-element subelement"><img src="images/cooking.png">Cooking</li>
+
+        <li class="foot-element small">Email Newsletters</li>
+        <li class="foot-element small">Corporate Subscriptions</li>
+        <li class="foot-element small">Education Rate</li>
+        <li class="foot-element small border-top">Mobile Applications</li>
+        <li class="foot-element small">Replica Edition</li> 
+        <li class="foot-element small">International</li> 
+        <li class="foot-element small">Español</li>
+        <li class="foot-element small">中文网</li>
+    </ul>
 </nav>
-<footer>
 
+<!-- Copyright, contact, etc footer -->
 
+<footer class="main-footer">
+    <div class="copyright"></div>
 </footer>
+
+
+<!-- popup subscribe footer -->
+<footer class="subscribe sub-footer">
+    <div class="footer-text">Access more of The Times by creating a free account or logging in. </div>
+    <div id="footerButton" class="footer button">EXPAND  <i class="fa fa-angle-up"></i></div>
+    <img src="images/hidden.png" class="hide">
+</footer>
+
+
 </body>
 </html>    
