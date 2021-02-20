@@ -20,7 +20,7 @@
             <i class="material-icons nav-icons">search</i>
             <a id="nav-link" href="https://mail.google.com">SPACE & COSMOS</a>
         </div>
-        <img id="NYT-logo" src="items/wordmark-Master-large-optimised-BLK.svg" alt="NYT-logo">
+        <img class="NYT-logo" src="items/wordmark-Master-large-optimised-BLK.svg" alt="NYT-logo">
         <div>
             <input class= "nav-buttons" id="subscribe" value="SUBSCRIBE NOW" type="submit"/>
             <input class= "nav-buttons" id="log-in" value="LOG IN" type="submit"/>
@@ -74,8 +74,8 @@
     </div>
 
     <aside id="editors-choice">
-        <div class="ed-tit">
-            <h3>Editors' Picks</h3>
+        <div class="ed-tit-cont">
+            <h3 class="ed-tit">Editors' Picks</h3>
         </div>
         <div class="ed-img1">
             <img class="aside-img" src="items/16aus-medvedev-square640-v3.jpg" alt="Medvedev shrug"/>
@@ -119,7 +119,7 @@
 
     <figure  id="inflation-theory">
         <figcaption class="summary-text">
-            <div class="subtitle"><h3>The Theory Of Inflation</h3></div>
+            <div class="subtitle btm-sub"><h3>The Theory Of Inflation</h3></div>
             <p>Astronomers have found evidence to support the theory of inflation, which explains how the universe expanded so uniformly and so quickly in the instant after the Big Bang 13.8 billion years ago.</p></figcaption>
         <div id="inflation-content">
             <img id="inflation-image" src="items/inflation-945.png" alt="inflation-image"/>
@@ -378,14 +378,17 @@
             </div>
         </div>
     </div>
+</div>
 
+<div class="wide-ad">
+    <p>ADVERTISEMENT</p>
 </div>
 
 <!-- Nav table below all content -->
 
 <nav class="bottom-nav">
-    <div class="nytimes title"><img src="images/title.png"></div>
-    <div class="home-page-link">Go to Home Page »</div>
+    <img class="NYT-logo" src="items/wordmark-Master-large-optimised-BLK.svg" alt="NYT-logo">
+    <div class="nytimes title"><img src=items/wordmark-Master-large-optimised-BLK.svg></div>
     <ul class="footer-list"><em>NEWS</em>
         <li class="foot-element">Home Page</li>
         <li class="foot-element">World</li>
@@ -456,10 +459,10 @@
         <li class="foot-element">Manage My Account</li>
     </ul>
     <ul id="sub" class="footer-list sub"><em>SUBSCRIBE</em>
-        <li class="foot-element subelement "><img src="images/home.png">Home Delivery</li>
-        <li class="foot-element subelement"><img src="images/digital.png">Digital Subscriptions</li>
-        <li class="foot-element subelement"><img src="images/games.png">Games</li>
-        <li class="foot-element subelement"><img src="images/cooking.png">Cooking</li>
+        <li class="foot-element subelement "><img src="items/home-delivery.png">Home Delivery</li>
+        <li class="foot-element subelement"><img src="items/NYT-letter.png">Digital Subscriptions</li>
+        <li class="foot-element subelement"><img src="items/games.png">Games</li>
+        <li class="foot-element subelement"><img src="items/cooking.png">Cooking</li>
 
         <li class="foot-element small">Email Newsletters</li>
         <li class="foot-element small">Corporate Subscriptions</li>
@@ -475,16 +478,33 @@
 <!-- Copyright, contact, etc footer -->
 
 <footer class="main-footer">
-    <div class="copyright"></div>
+    <div class="copyright"><span>&copy 2021 The New York Times Company</span></div>
+    <nav class="more-links">
+        <ul class="main-footer-list">
+            <li class="footer-links">NYTCo</li>
+            <li class="footer-links">Contact Us</li>
+            <li class="footer-links">Accessibility</li>
+            <li class="footer-links">Work with us</li>
+            <li class="footer-links">Advertise</li>
+            <li class="footer-links">T Brand Studio</li>
+            <li class="footer-links">Your Ad Choices</li>
+            <li class="footer-links">Privacy Policy</li>
+            <li class="footer-links">Terms of Service</li>
+            <li class="footer-links">Terms of Sale</li>
+            <li class="footer-links">Site Map</li>
+            <li class="footer-links">Help</li>
+            <li class="footer-links">Subscriptions</li>
+        </ul>
+    </nav>
 </footer>
 
 
 <!-- popup subscribe footer -->
-<footer class="subscribe sub-footer">
+<!-- <footer class="subscribe sub-footer">
     <div class="footer-text">Access more of The Times by creating a free account or logging in. </div>
     <div id="footerButton" class="footer button">EXPAND  <i class="fa fa-angle-up"></i></div>
     <img src="images/hidden.png" class="hide">
-</footer>
+</footer> -->
 
 
 </body>
