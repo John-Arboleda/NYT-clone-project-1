@@ -252,8 +252,8 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas:
-  "infl-11 infl-12 infl-13 infl-14"
-  "infl-21 infl-22 infl-23 infl-24";
+    "infl-11 infl-12 infl-13 infl-14"
+    "infl-21 infl-22 infl-23 infl-24";
 }
 
 #inflation-text div {
@@ -309,13 +309,31 @@ body {
 
 /* Aside Editor's Choice */
 
-.ed-tit {
+#editors-choice {
+  height: 321px;
+  width: 210px;
+  position: absolute;
+  right: 40px;
+  display: grid;
+  grid-template-columns: 75px auto;
+  grid-template-rows: auto 1fr 1fr 1fr;
+  grid-template-areas:
+    "ed-header ed-header"
+    "ed-11 ed-12"
+    "ed-21 ed-22"
+    "ed-31 ed-32";
+}
+
+.ed-tit-cont {
   grid-area: ed-header;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+.ed-tit {
   font-family: nyt-franklin, arial, helvetica, sans-serif;
   font-weight: 700;
   font-size: 15px;
-  padding-bottom: 14px;
-  border-bottom: 1px solid rgb(226, 226, 226);
 }
 
 .ed-img1 {
@@ -342,29 +360,14 @@ body {
   grid-area: ed-32;
 }
 
-#editors-choice {
-  height: 321px;
-  width: 210px;
-  position: absolute;
-  right: 40px;
-  display: grid;
-  grid-template-columns: 75px auto;
-  grid-template-rows: 29px 1fr 1fr 1fr;
-  grid-template-areas:
-  "ed-header ed-header"
-  "ed-11 ed-12"
-  "ed-21 ed-22"
-  "ed-31 ed-32";
-}
-
-#editors-choice img {
+.aside-img {
   height: 75px;
   width: 75px;
 }
 
-#editors-choice a {
+.aside-link {
   font-family: nyt-franklin, arial, helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   color: black;
   text-decoration: none;
@@ -403,7 +406,7 @@ body {
   margin: 0 auto;
 }
 
-#bottom-of-article a {
+.btm-sub {
   color: #888;
 }
 
@@ -413,332 +416,242 @@ body {
 }
 
 .comment-section {
-  display:flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 20px 0;
 }
 
-/* Grid for Newsletter, Links and more on space/astronomy*/
+/* Grid for Newsletter, Links and more on space/astronomy */
 
-.grid-suggested-content {
-  padding-top:30px;
-  margin-right: 100px;
-  margin-left:100px;
-  display:grid;
-  grid-template-columns: 3fr 3fr 3fr 4fr;
-  grid-template-rows:auto 300px auto 300px 300px auto 300px;
-  grid-gap:20px;
-  grid-template-areas: 
-   "t1 t1 t1 t2"
-   "stile stile stile popular"
-   "t3 t3 t3 popular"
-   "spce spce spce popular"
-   "spce spce spce popular"
-   "t4 t4 t4 popular"
-   "edpck edpck edpck popular"
-   "edpck edpck edpck popular";
-}
-
-/* Layout of end of article tiles*/
-
-.t1 {
-  grid-area: t1;
-}
-
-.t2 {
-  grid-area: t2;
-}
-
-.t3 {
-  grid-area: t3;
-}
-
-.t4 {
-  grid-area: t4;
-}
-
-.stile {
-  grid-area: stile;
-}
-
-.popular {
-  grid-area: popular;
-}
-
-.spce {
-  grid-area: spce;
-}
-
-.edpck {
-  grid-area: edpck;
-}
-
-/* Suggested Newsletter for you */
-
-.tip {
-  display:grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto auto auto;
-  grid-gap: 10px;
-  align-items:center;
-  justify-items:stretch;
+.suggested-container {
+  display: grid;
+  width: 1200px;
+  grid-template-columns: 852px auto;
+  grid-template-rows: 1fr auto 1fr;
+  margin: 0 auto;
+  grid-gap: 20px;
   grid-template-areas:
-    "title title"
-    "t1 l1"
-    "t2 l2"
-    "t3 l3" ;
-  align-self: start;
-   justify-self:right;
-  width: 200px;
-  text-align: right;
-  
+    "news pop"
+    "spac pop"
+    "pick pop";
 }
 
-/* Tip grid arrangement */
-
-.t1 {
-  grid-area: t1;
+.space-and-astronomy-container {
+  grid-area: spac;
 }
 
-.t2 {
-  grid-area:t2;
+.editors-container {
+  grid-area: pick;
 }
 
-.t3 {
-  grid-area:t3;
-}
+/* newsletter grid */
 
-.l1 {
-  grid-area:l1;
-}
-
-.l2 {
-  grid-area:l2;
-}
-.l3 {
-  grid-area: l3;
-}
-
-.tip img {
+.newsletter-grid {
+  grid-area: news;
+  display: grid;
   width: 100%;
-  margin: 10px; 
+  height: 351px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto 295px;
+  grid-template-areas:
+    "nwsltitle nwsltitle nwsltitle"
+    "nwsconten nwsconten nwsconten";
 }
 
-.tip a {
-  color:#333;
-  font-size: 0.8em;
-  text-decoration: none;
+.newsletter-title {
+  grid-area: nwsltitle;
 }
 
-.tip .tip-title {
-  grid-area: title;
-  font-family: nyt-franklin, arial, helvetica, sans-serif;
-  display:block;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 10px;
-  font-size: 0.8em;
+.suggested-newsletters {
+  grid-area: nwsconten;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+
+.suggestions-title {
+  padding: 17px 0;
+  height: 22px;
+  width: 100%;
+  margin-top: 0;
+  border-top: 1px solid #333;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
+  font-size: 1.1em;
+}
+
+.suggested-tile {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  position: relative;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.plus {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  margin: 15px;
+  top: 0;
+  right: 0;
+}
+
+.plus div::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #333;
+  border-radius: 50%;
+  font-size: xx-large;
+  font-size: 25px;
+  width: 35px;
+  height: 35px;
+  content: "\FF0B";
+}
+
+.suggested-tile-title {
+  padding-top: 5px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.75em;
+  color: #444;
+}
+
+.suggested-tile-sub {
+  font-weight: bold;
+  padding-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.suggested-tile-content {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.suggested-tile > img {
+  width: 80px;
+  margin: 10px;
+}
+
+.see-the-latest {
+  margin-top: auto;
+  color: #326891;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Most Popular */
+
+.popular-container {
+  grid-area: pop;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.popular-link {
+  font-size: 18px;
+  color: rgb(18, 18, 18);
+  font-family: nyt-cheltenham, georgia, "times new roman", times, serif;
+  cursor: pointer;
+  padding: 15px;
+  border-top: 1px solid #ccc;
+  font-weight: 500;
+}
+
+/* Space and astronomy / Editors' Picks tiles */
+
+.space-and-astronomy {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, minmax(100px, 350px));
+  grid-gap: 20px;
+}
+
+.tile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.tile img {
+  width: 100%;
+}
+
+.tile figcaption {
+  align-self: flex-end;
+  margin: 5px;
+  font-size: 0.65em;
+  color: #666;
+}
+
+.tile time {
+  margin-top: 7px;
+  font-size: 0.8em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #888;
 }
 
 /* Footer */
 
 footer {
   position: fixed;
-  background:white;
-  padding-top:15px;
+  background: white;
+  padding-top: 15px;
   border-top: 1px solid #333;
   bottom: 0;
-  height:4rem;
+  height: 4rem;
   width: 100%;
-  display:grid;
+  display: grid;
   grid-template-columns: 50px 1fr auto 1fr auto 20px;
   grid-template-rows: 4rem 12rem;
   flex-direction: row;
   justify-content: end;
   align-items: baseline;
-  transition:all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 footer.show {
   height: 16rem;
 }
 
-footer >.footer-text {
+footer > .footer-text {
   grid-column: 3 / span 1;
   font-size: 0.9em;
   cursor: pointer;
-  font-family: 'Helvetica', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-footer>.button {
+footer > .button {
   cursor: pointer;
   grid-column: 5 / span 1;
-   font-size: 0.8em;
+  font-size: 0.8em;
   font-weight: bold;
 }
 
 footer .hide {
   grid-row: 2 / span 1;
-  grid-column:  1 / -1;
-  justify-self:center;
-  max-width:1100px;
-  width:100%;
-  cursor: pointer;
-}
-
-/* Suggested content at the end of the article (lots of tiles and footer)*/
-
-.suggested-content .suggestions-title {
-  /*padding: 20px;*/
-  margin-top: 0px;
-  border-top: 1px solid #333;
-  font-family: Arial, Helvetica;
-  font-weight: bold;
-  font-size: 1.1em;
-}
-
-/* Tiles Stile (tiles at end of article) */
-
-.suggested-newsletters {
+  grid-column: 1 / -1;
+  justify-self: center;
+  max-width: 1100px;
   width: 100%;
-  display:grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 15px;
-   
-}
-.suggested-tile {
-  display: flex;
-  flex-direction:column;
-  border: 1px solid #ccc;
-  position: relative;
-  width: 100%;
-  padding: 15px;
-  transition: all 0.2 ease;
   cursor: pointer;
-}
-
-.suggested-tile:hover {
-  box-shadow: 0 3px 3px 1px #ccc;
-}
-.plus {
-  position:absolute;
-  display: flex;
-  align-items: center;
-  margin:15px;
-   
-  top: 0;
-  right:0;
-}
- 
-.plus div:before {
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid #333;
-  border-radius:50%;
-  font-size: xx-large;
-  font-size: 25px;
-  width:35px;
-  height:35px;
-  content:"\FF0B";
-  transition: all 0.2s ease;
-}
-.suggested-tile:hover .plus div:before {
-  background:#333;
-  color:white;
-}
-.suggested-tile-title {
-  padding-top: 5px;
-  font-weight: 500;
-  font-family:Arial, Helvetica, sans-serif;
-  font-size: .75em;
-  color:#444;
-}
-
-.suggested-tile-sub {
-  font-weight: bold;
-  padding-bottom: 10px;
-  font-family:Arial, Helvetica, sans-serif;
-}
-
-.suggested-tile-content {
-  font-family:Helvetica, Arial, sans-serif;
-}
-
-
-.suggested-tile>img {
-  width: 80px;
-  margin: 10px;
-  grid-area: icon;
-}
-
-.see-the-latest {
-  margin-top:auto;
-  color:#326891;
-  font-family:Arial, Helvetica;
-  font-size: 0.9em;
-  font-weight:600;
-  cursor: pointer;
-  transition: all 0.2 ease;
-}
-
-.see-the-latest:hover {
-  text-decoration: underline;
-
-}
-
-/* Most popular list style */
-.popular-link  {
-  cursor:pointer;
-  padding:20px;
-  border-top:1px solid #ccc;
-  font-weight:500;
-}
-
-
-/* Space and astronomy tiles */
-
-.space-and-astronomy {
-  display:grid; 
-  justify-content: center;
-  grid-template-columns: repeat(3, minmax(100px, 350px));
-  grid-gap:20px;
-  
-}
-.tile {
-  width:100%;
-  
-  display:flex;
-  flex-direction:column;
-}
-.tile img{
-  width:100%;
-}
-
-.tile figcaption {
-  align-self: flex-end;
-  margin: 5px;
-  font-size:0.65em;
-  color:#666;
-}
-.tile time {
-  margin-top: 7px;
-  font-size: .8em;
-  font-family:Arial, Helvetica;
-  color:#888;
 }
 
 /* multi-column footer list */
 
-
 .bottom-nav {
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: auto 1fr auto;
   grid-gap: 40px;
-  margin-top:100px;
-  margin-right:50px;
+  margin-top: 100px;
+  margin-right: 50px;
   grid-column: 2 / span 2;
   border-top: 4px double #ccc;
   border-bottom: 1px solid #ccc;
@@ -750,28 +663,30 @@ footer .hide {
   justify-self: left;
   cursor: pointer;
 }
+
 .home-page-link {
-  justify-self:right;
+  justify-self: right;
   font-size: 0.8em;
-  color:#326891cc;
+  color: #326891cc;
   font-family: Arial, Helvetica, sans-serif;
   cursor: pointer;
-
 }
+
 .footer-list {
   grid-row-start: 2;
-  display:inline-block;
-  padding-left:0;
+  display: inline-block;
+  padding-left: 0;
 }
-.footer-list>em {
-  font-style:normal;
-  font-family: Helvetica, sans-serif;
+
+.footer-list > em {
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.85em;
   font-weight: 800;
 }
 
 li.foot-element {
-  font-family: Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.8em;
   margin-top: 10px;
 }
@@ -780,23 +695,25 @@ li.foot-element:hover {
   text-decoration: underline;
   cursor: pointer;
 }
+
 .border-top {
-  border-top:1px solid #ccc;
-  padding-top:20px;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
 }
 
 .sub {
   border-left: 1px solid #ccc;
-  padding-left:15px;
+  padding-left: 15px;
 }
 
 li.subelement {
   font-weight: 800;
   font-size: 1em;
 }
+
 .sub img {
-  width:20px;
-  margin-right:10px;
+  width: 20px;
+  margin-right: 10px;
 }
 
 /* media queries */
